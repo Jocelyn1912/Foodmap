@@ -40,34 +40,97 @@
           </div>
           <p class="title3">Restaurantes más cercanos</p>
           <!-- Menú tipos de comidas -->
-          <select id="options" class="select-edit">
-            <option value="">Tipo de comida...</option>
-            <option value="coreana" class="coreana">Coreana</option>
-            <option value="tailandesa" class="tailandesa">Tailandesa</option>
-            <option value="india" class="india">India</option>
+          <select id="options" class="select-edit list">
+            <option value="todas">Tipo de comida...</option>
+            <option value="coreana">coreana</option>
+            <option value="tailandesa">tailandesa</option>
+            <option value="japonesa">japonesa</option>
           </select>
         </div>
       </div>
-      <div class="row">
-        <div class="col-xs-4">
-          <img class="img-responsive imagen" src="assets/img/coreana1.jpg" alt="">
+      <!-- Restaurantes Coreanos -->
+      <div class="row filter">
+        <div class="col-xs-4 contenedor1 coreana" data-toggle="modal" data-target="#login-modal">
+          <img class="img-responsive food-img" src="assets/img/coreana1.jpg" alt="">
+          <div class="food-overlay1">
+            <p>Sukine</p>
+          </div>
         </div>
-        <div class="col-xs-4">
-          <img class="img-responsive imagen" src="assets/img/Coreana2.jpg" alt="">
+        <div class="col-xs-4 contenedor coreana">
+          <img class="img-responsive food-img" src="assets/img/Coreana2.jpg" alt="">
+          <div class="food-overlay">
+            <p>Hansoban</p>
+          </div>
         </div>
-        <div class="col-xs-4">
-          <img class="img-responsive imagen" src="assets/img/Coreana3.jpg" alt="">
+        <div class="col-xs-4 contenedor coreana">
+          <img class="img-responsive food-img" src="assets/img/Chicken1.jpg" alt="">
+          <div class="food-overlay">
+            <p>Chiken Story</p>
+          </div>
         </div>
       </div>
+      <!-- Restaurantes de comida Tailandesa -->
       <div class="row">
-        <div class="col-xs-6">
-          <img class="img-responsive imagen" src="assets/img/Tailandesa1.jpg" alt="">
+        <div class="col-xs-4 contenedor tailandesa">
+          <img class="img-responsive food-img" src="assets/img/Tailandesa1.jpg" alt="">
+          <div class="food-overlay">
+            <p>Tahi & Restaurant</p>
+          </div>
         </div>
-        <div class="col-xs-6">
-          <img class="img-responsive imagen" src="assets/img/Chicken1.jpg" alt="">
+        <div class="col-xs-4 contenedor tailandesa">
+          <img class="img-responsive food-img" src="assets/img/Tailandesa2.jpg" alt="">
+          <div class="food-overlay">
+            <p>Lai Thai</p>
+          </div>
+        </div>
+        <div class="col-xs-4 contenedor tailandesa">
+          <img class="img-responsive food-img" src="assets/img/Tailandesa3.jpg" alt="">
+          <div class="food-overlay">
+            <p>Lai Thai</p>
+          </div>
+        </div>
+      </div>
+      <!-- Restaurantes Japoneses -->
+      <div class="row">
+        <div class="col-xs-4 contenedor japonesa">
+          <img class="img-responsive food-img" src="assets/img/Japon1.jpg" alt="">
+          <div class="food-overlay">
+            <p>Restaurante Japón</p>
+          </div>
+        </div>
+        <div class="col-xs-4 contenedor japonesa">
+          <img class="img-responsive food-img" src="assets/img/Japon2.jpg" alt="">
+          <div class="food-overlay">
+            <p>Arigato</p>
+          </div>
+        </div>
+        <div class="col-xs-4 contenedor japonesa">
+          <img class="img-responsive food-img" src="assets/img/Japon3.jpg" alt="">
+          <div class="food-overlay">
+            <p>Japón</p>
+          </div>
         </div>
       </div>
     </div>
+  <!-- Modal ubicación -->
+  <div class="fondoModal1 text-center">
+  <div class="modal fade" id="login-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+    <div class="modal-dialog">
+      <div class="loginmodal-container">
+        <form>
+          <p><strong>Sukkine</strong></p>
+          <div class="map">
+            <!-- Mapa -->
+            <iframe class="img-responsive" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3329.6713304063055!2d-70.64540788480106!3d-33.43181218077929!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c597a54e7005%3A0x1e8f72d3ee9f32b9!2sSukine!5e0!3m2!1ses!2scl!4v1513189635890" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+          <p>Antonia López de Bello 244, Santiago, Recoleta, Región Metropolitana</p>
+          <p> Comida tradicional Coreana</p>
+        </form>
+        <a href="http://www.sukine.com/" class="btn btn-primary">Pedir ahora</a>
+      </div>
+    </div>
+  </div>
+  </div>
   </section>
 
 
