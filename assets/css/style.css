@@ -187,3 +187,7 @@ img {
 .modal-dialog p strong {
   font-size: 5vh;
 }
+
+.loginmodal-container span {
+  color: #fff;
+}
